@@ -1,0 +1,254 @@
+/* ================================
+   A4 Resume Page - Sujal Kamanna
+   ================================ */
+
+/* General Page Setup */
+body {
+  background: #d9d9d9; /* light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  color: #000;
+  margin: 0;
+}
+
+/* A4 Paper Container */
+.a4-page {
+  background: #fff;
+  width: 200mm;  /* A4 width */
+  height: 280mm; /* A4 height */
+  padding: 20mm 20mm;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  color: #000;
+}
+
+/* Name */
+/* Header and Name Styling */
+.resume-header {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.resume-name {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Optional: Add an underline decoration */
+.resume-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.resume-name:hover::after {
+    width: 100px;
+}
+
+/* Print styles */
+@media print {
+    .resume-name {
+        color: #000;
+    }
+    
+    .resume-name::after {
+        display: none;
+    }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .resume-name {
+        font-size: 24px;
+    }
+}
+
+/* Headings */
+.head {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #222;
+}
+
+/* Paragraphs & Lists */
+p, li {
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 4px 0;
+}
+
+/* Links */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Horizontal Line */
+hr {
+  border: none;
+  border-top: 1px solid #aaa;
+  margin: 10px 0 15px 0;
+}
+
+/* Contact Info */
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    font-size: 12px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* For mobile screens */
+@media screen and (max-width: 600px) {
+    .contact-info {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+}
+
+/* For print */
+@media print {
+    .contact-info {
+        margin: 10px 0;
+    }
+    
+    .contact-info a {
+        text-decoration: none !important;
+    }
+}
+
+/* Education Section */
+.edu-item,
+.exp-item,
+.pub-item {
+  margin-bottom: 12px;
+}
+
+.edu-row,
+.exp-row,
+.pub-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.edu-left, .exp-left, .pub-left {
+  text-align: left;
+  flex: 1;
+  font-size: 12px;
+}
+
+.edu-right, .exp-right, .pub-right {
+  text-align: right;
+  flex: 1;
+  font-size: 12px;
+}
+
+.pub-right {
+  flex: 0 0 auto;
+}
+
+.pub-desc,
+.certifications,
+.skills {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+.exp-desc {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+
+/* Footer Styles */
+/* Footer Styles */
+.resume-footer {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.signature {
+    font-family: 'Sacramento', cursive;
+    font-size: 24px;
+    color: #2c3e50;
+    text-align: right;
+    flex-grow: 1;
+    transition: color 0.3s ease;
+}
+
+.signature:hover {
+    color: #34495e;
+}
+
+/* Add print styles */
+@media print {
+    .resume-footer {
+        position: fixed;
+        bottom: 20mm;
+        width: calc(100% - 50mm);
+        border-top: 0.5pt solid #999;
+    }
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 600px) {
+    .resume-footer {
+        margin-top: 20px;
+    }
+
+    .signature {
+        font-size: 20px;
+    }
+}
