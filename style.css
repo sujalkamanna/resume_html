@@ -4,7 +4,7 @@
 
 /* General Page Setup */
 body {
-  background: #d9d9d9; /* light gray background */
+  background: #d9d9d9;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -17,16 +17,15 @@ body {
 /* A4 Paper Container */
 .a4-page {
   background: #fff;
-  width: 200mm;  /* A4 width */
-  height: 280mm; /* A4 height */
-  padding: 20mm 20mm;
+  width: 210mm;  /* Standard A4 width */
+  height: 297mm; /* Standard A4 height */
+  padding: 20mm;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
   color: #000;
 }
 
-/* Name */
 /* Header and Name Styling */
 .resume-header {
     margin: 0 0 20px 0;
@@ -45,7 +44,6 @@ body {
     position: relative;
 }
 
-/* Optional: Add an underline decoration */
 .resume-name::after {
     content: '';
     position: absolute;
@@ -60,24 +58,6 @@ body {
 
 .resume-name:hover::after {
     width: 100px;
-}
-
-/* Print styles */
-@media print {
-    .resume-name {
-        color: #000;
-    }
-    
-    .resume-name::after {
-        display: none;
-    }
-}
-
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-    .resume-name {
-        font-size: 24px;
-    }
 }
 
 /* Headings */
@@ -116,7 +96,6 @@ hr {
 }
 
 /* Contact Info */
-/* Contact Info */
 .contact-info {
     text-align: center;
     font-size: 12px;
@@ -132,25 +111,6 @@ hr {
 
 .contact-info a:hover {
     text-decoration: underline;
-}
-
-/* For mobile screens */
-@media screen and (max-width: 600px) {
-    .contact-info {
-        font-size: 11px;
-        line-height: 1.8;
-    }
-}
-
-/* For print */
-@media print {
-    .contact-info {
-        margin: 10px 0;
-    }
-    
-    .contact-info a {
-        text-decoration: none !important;
-    }
 }
 
 /* Education Section */
@@ -194,6 +154,7 @@ hr {
   margin-bottom: 12px;
   text-align: justify;
 }
+
 .exp-desc {
   font-size: 12px;
   line-height: 1.4;
@@ -202,8 +163,6 @@ hr {
   text-align: justify;
 }
 
-
-/* Footer Styles */
 /* Footer Styles */
 .resume-footer {
     position: relative;
@@ -232,18 +191,17 @@ hr {
     color: #34495e;
 }
 
-/* Add print styles */
-@media print {
-    .resume-footer {
-        position: fixed;
-        bottom: 20mm;
-        width: calc(100% - 50mm);
-        border-top: 0.5pt solid #999;
-    }
-}
-
-/* Add responsive styles */
+/* Responsive styles */
 @media screen and (max-width: 600px) {
+    .resume-name {
+        font-size: 24px;
+    }
+    
+    .contact-info {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+    
     .resume-footer {
         margin-top: 20px;
     }
