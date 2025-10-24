@@ -4,7 +4,7 @@ A clean, responsive HTML and CSS resume template designed for a professional pre
 
 ## Live Preview
 
-View the live resume: [https://sujalkamannath.github.io/resume/](https://sujalkamannath.github.io/resume/)
+View the live resume: [https://sujalkamannath.github.io/resume/](https://sujalkamanna.github.io/resume_html/)
 
 ## Features
 
@@ -24,5 +24,3 @@ View the live resume: [https://sujalkamannath.github.io/resume/](https://sujalka
   - Cormorant Garamond
   - Poppins
   - Sacramento (for signature)
-# resume_html
-# resume_html
