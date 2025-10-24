@@ -24,3 +24,4 @@ View the live resume: [https://sujalkamannath.github.io/resume/](https://sujalka
   - Cormorant Garamond
   - Poppins
   - Sacramento (for signature)
+# resume_html
